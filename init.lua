@@ -1,2 +1,1 @@
-require("viktorfrom")
-print("hello")
+require("plugin_config")
