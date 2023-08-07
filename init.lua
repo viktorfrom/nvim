@@ -1,1 +1,1 @@
-require("plugin_config")
+require("viktorfrom")
