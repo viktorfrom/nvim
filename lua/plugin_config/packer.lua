@@ -13,13 +13,10 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use {
-      "loctvl842/monokai-pro.nvim",
-      as = 'momokai-pro',
-      config = function()
-          require("monokai-pro").setup()
-      end
-  }
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use('Mofiqul/dracula.nvim')
+  use('tanvirtin/monokai.nvim')
+
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
