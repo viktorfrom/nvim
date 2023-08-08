@@ -18,10 +18,10 @@ return require('packer').startup(function(use)
   use('tanvirtin/monokai.nvim')
 
 
+  use('mbbill/undotree')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
-  use('mbbill/undotree')
   use('tpope/vim-fugitive')
 
   use {
@@ -45,4 +45,15 @@ return require('packer').startup(function(use)
     }
   }
 
+  use {
+      "nvim-neo-tree/neo-tree.nvim",
+      branch = "v3.x",
+      requires = {
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+      }
+  }
+
 end)
+
