@@ -14,7 +14,6 @@ return require('packer').startup(function(use)
   }
 
   use { "catppuccin/nvim", as = "catppuccin" }
-  use('Mofiqul/dracula.nvim')
   use('tanvirtin/monokai.nvim')
 
 
